@@ -23,16 +23,13 @@ public class Main {
         lotteryCard2[2][1] = 13;
         lotteryCard2[2][2] = 47;
 
-//        for(int i = 0; i<3; i++) {
-//            for (int j = 0; j < 3; j++) {
-//                System.out.println(lotteryCard[i][j]);
-//            }
-//        }
-
-        Iterator<int[]> it = Arrays.stream(lotteryCard).iterator();
-
-        while(it.hasNext()) {
-            System.out.println(it.next());
+        for(int[] row : lotteryCard) {
+            for(int n : row) {
+                System.out.print(n + " ");
+            }
+            System.out.println();
         }
+
+
     }
 }

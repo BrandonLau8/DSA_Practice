@@ -14,8 +14,8 @@ public class Main {
 //
 //        tree.inOrderTraversal(tree.root);
 //        tree.preOrderTraversal(tree.root);
-//        tree.postOrderTraversal(tree.root);
-        tree.levelOrderTraversal(tree.root);
+        tree.postOrderTraversal(tree.root);
+//        tree.levelOrderTraversal(tree.root);
     }
 }
 
