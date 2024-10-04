@@ -4,7 +4,9 @@ import java.util.*;
 
 public class DetectCycleUndirectedGraphBFS {
 
-    public void detectCycle(int nodeCount, Node startNode, Graph graph) {
+    public void detectCycle(int nodeCount, Node startNode, UndirectedGraph graph) {
+
+        //get adj list and visit array
         Map<Node, List<Node>> adj = graph.getAdjList();
 
         boolean[] vis = new boolean[nodeCount];

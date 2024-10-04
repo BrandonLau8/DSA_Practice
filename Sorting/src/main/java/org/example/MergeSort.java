@@ -63,6 +63,7 @@ public class MergeSort {
             k++;
         }
 
+        //add remaining elements
         while(i < leftArrSize) {
             inputArray[k] = leftArr[i];
             i++;

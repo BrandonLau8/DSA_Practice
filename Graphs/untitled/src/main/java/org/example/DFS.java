@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Map;
 
 public class DFS {
-    public static void dfsOfGraph(int nodeCount, Graph graph, Node startNode) {
+    public static void dfsOfGraph(int nodeCount, UndirectedGraph graph, Node startNode) {
+        //DFS through undirected graph adj
         Map<Node, List<Node>> adj = graph.getAdjList();
 
         //Create list
@@ -14,7 +15,7 @@ public class DFS {
 
         //Iterate through each node in the adjList
         adj.forEach((key, value) -> {
-            //If node not visited use recursion
+            //If node not visited use recursion. This conditional ensures disconnected graphs are fully checked.
             if(!vis[key.val]) {
                 dfs(key, vis, adj, dfsStore);
             }

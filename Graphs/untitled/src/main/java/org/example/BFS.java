@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BFS {
 
-    public static void bfsOfGraph(int nodeCount, Graph graph, Node startNode) {
+    public static void bfsOfGraph(int nodeCount, UndirectedGraph graph, Node startNode) {
         //Get Adj List
         Map<Node, List<Node>> adj = graph.getAdjList();
 

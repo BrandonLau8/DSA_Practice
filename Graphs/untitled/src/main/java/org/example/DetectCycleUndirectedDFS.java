@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class DetectCycleUndirectedDFS {
 
-    public static boolean detectCycle(int nodeCount, Graph graph) {
+    public static boolean detectCycle(int nodeCount, UndirectedGraph graph) {
         Map<Node, List<Node>> adj =  graph.getAdjList();
 
         //Create currentNode and visit array
